@@ -218,9 +218,7 @@ static CGFloat const margin = 10.0f;
     self.balloonView.clipsToBounds = true;
     self.balloonView.backgroundColor = self.balloonBackgroundColor;
     [self addSubview:self.balloonView];
-    [self.balloonView autoPinEdgeToSuperviewEdge:ALEdgeLeading];
-    [self.balloonView autoPinEdgeToSuperviewEdge:ALEdgeTrailing];
-    
+
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-(0)-[balloonView]-(0)-|"
                                                                  options:0
                                                                  metrics:nil
